@@ -1,1 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #E69A8DFF;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-container {
+    height: 510px;
+    width: 300px;
+    margin: 2%;
+}
+
+.top {
+    height: 50px;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #00203FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.text {
+    background: none;
+    color: #ADEFD1FF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.middle {
+    background-color: #00203FFF;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-area {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.bottom {
+    background-color: #00203FFF;
+    height: 35%;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.progressBar {
+    margin-top: 40px;
+    width: 250px;
+    cursor: pointer;
+    height: 5px;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 10px;
+    margin: 9px;
+    margin-top: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #ADEFD1FF;
+    background-color: #00203FFF;
+}
+
+i:hover {
+    color: rgb(238, 238, 247);
+}
+
+.song-name,
+.artist-name {
+    text-align: center;
+    color: #ADEFD1FF;
+    font-size: 18px;
+    font-weight: 500;
+    background: none;
+}
+
+
+.song-item .songName,
+.song-list,
+.timestamp,
+.pbtn,
+.current-time,
+.max-duration, .close, .ml{
+    background: none;
+}
+
+
+.music-list {
+    background-color: #00203FFF;
+    position: absolute;
+    width: 300px;
+    top: 49%;
+    border: 2px solid white;
+    border-radius: 10px;
+    visibility: hidden;
+    transition: width 2s;
+}
+
+
+.song-item {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    color:#ADEFD1FF;
+    background-color: #00203FFF;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 8px;
+    border-radius: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+    
+}
+
+.song-list .timestamp,
+.pbtn {
+    padding: 5px;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.7rem;
+    font-size: 13px;
+    color: rgb(223, 222, 222);
+    background-color: #00203FFF;
+}
+
+.progress-area{
+    background-color: #00203FFF;
+}
+
+.list-top{
+    width: 300px;
+}
+
+.heading{
+    border: none;
+}
