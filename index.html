@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1cf950e2a9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child-container">
+
+            <div class="top">
+                <span class="text">Now Playing</span>
+            </div>
+
+            <div class="middle">
+                <div class="image-area">
+                    <img id="img" src="images/music-1.jpg" alt="">
+                    <p class="song-name">Pasoori</p>
+                    <p class="artist-name">Artist-1</p>
+                </div>
+            </div>
+
+
+            <div class="bottom">
+                <div class="progress-area">
+                    <input type="range" class="progressBar" min="0" value="0" max="100"><br>
+                    <div class="timer">
+                        <div class="current-time">0:00</div>
+                        <div class="max-duration">3:44</div>
+                    </div>
+                </div>
+                <i class="btn fa-solid fa-shuffle" id="shuffle-btn"></i>
+                <i class="btn fa-solid fa-backward-step" id="prev-btn"></i>
+                <i class="btn fa-solid fa-play" id="play-btn"></i>
+                <i class="btn fa-solid fa-forward-step" id="next-btn"></i>
+                <i class="btn fa-solid fa-list" id="music-list-btn"></i>
+            </div>
+
+            <div class="music-list">
+                <div class="heading song-item">
+                    <i class="pbtn fa-solid fa-list"></i>
+                    <span class="ml">Music list</span>
+                    <i class="close pbtn fa-solid fa-xmark"></i>
+                </div>
+
+                <div class="main song-item" id="1">
+                    <span class="songName">Pasoori</span>
+                    <span class="song-list"><span class="timestamp">3:44</span></span>
+                </div>
+
+                <div class="main song-item" id="2">
+                    <span class="songName">Besharam Rang</span>
+                    <span class="song-list"><span class="timestamp">4:18</span></span>
+                </div>
+
+                <div class="main song-item" id="3">
+                    <span class="songName">Arabic kuthu</span>
+                    <span class="song-list"><span class="timestamp">4:42</span></span>
+                </div>
+
+                <div class="main song-item" id="4">
+                    <span class="songName">Dippam Dappam</span>
+                    <span class="song-list"><span class="timestamp">3:29</span></span>
+                </div>
+
+                <div class="main song-item" id="5">
+                    <span class="songName">ishare tere karti nigah</span>
+                    <span class="song-list"><span class="timestamp">3:44</span></span>
+                </div>
+
+                <div class="main song-item" id="6">
+                    <span class="songName">Arcade</span>
+                    <span class="song-list"><span class="timestamp">3:07</span></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="music-list.js"></script>
+    <script src="App.js"></script>
+</body>
+
+</html>
